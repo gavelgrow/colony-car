@@ -343,6 +343,21 @@ footer .foot{max-width:1180px}
  .rt-table table{min-width:0}
 }
 @media print{.rt{break-before:page}}
+
+/* rationale, plain voice */
+.rt-intro p{font-size:1.1875rem;line-height:1.65;color:var(--ink2);max-width:62ch;margin:0 0 18px}
+.rt-p{color:var(--ink2);max-width:68ch;font-size:1.0625rem;line-height:1.7;margin:0}
+.rt-list{list-style:none;margin:24px 0 0;padding:0;border-top:2px solid var(--ink)}
+.rt-list li{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:24px 0;border-bottom:1px solid var(--line);margin:0}
+.rt-list .pc{font:800 1.375rem/1.1 var(--f);letter-spacing:-.03em;font-variant-numeric:tabular-nums;color:var(--ink)}
+.rt-list h4{font-size:1.1875rem;line-height:1.25;letter-spacing:-.02em;font-weight:800;margin:0 0 8px}
+.rt-list p{margin:0;color:var(--ink2);max-width:64ch;line-height:1.65}
+.rt-prose p{color:var(--ink2);max-width:66ch;line-height:1.7;margin:0 0 18px}
+.rt-prose b{color:var(--ink);font-weight:700}
+.rt-aside{padding-left:18px;border-left:2px solid var(--gold);font-style:normal}
+.rt-tests{margin:16px 0 0!important;padding-left:20px!important;max-width:66ch;line-height:1.65}
+.rt-tests li{margin-bottom:12px!important}
+@media(min-width:900px){.rt-list li{grid-template-columns:88px 1fr;gap:24px}.rt-list .pc{font-size:1.75rem}}
 /* sticky bar */
 .bar{position:fixed;inset:auto 0 0 0;z-index:40;background:var(--bg);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1.3fr;gap:10px;transform:translateY(110%);transition:transform .3s var(--ease)}
 .bar.on{transform:none}
@@ -495,80 +510,67 @@ footer .foot{max-width:1180px}
 </footer>
 <section class="rt" id="why" aria-labelledby="h-why">
  <div class="wrap rt-wrap">
-  <p class="rt-flag">For review. This section explains the design and is not part of the page that visitors will see.</p>
-  <h2 class="rt-h" id="h-why">Why this page is built this way</h2>
-  <p class="rt-lead">Every major decision on this page traces back to evidence we gathered about Colony’s own visitors and about the Los Angeles market. Below we show what we looked at, what we decided, and how confident we are. We only list a decision as confident when we are at least 80% sure the evidence supports it.</p>
-
-  <div class="rt-cols">
-   <div>
-    <h3>What we looked at</h3>
-    <ul>
-     <li>Colony’s own visitor data from July to November 2026: Google Analytics, Microsoft Clarity and CallRail.</li>
-     <li>The Google Ads account: keyword quality scores, landing page experience, ad copy and search terms.</li>
-     <li>Six Los Angeles personal injury firms’ pages, studied for layout, claims, speed, forms and calls to action.</li>
-     <li>An independent eleven-firm review of Los Angeles landing pages, which we compared with our own.</li>
-    </ul>
-   </div>
-   <div>
-    <h3>How to read “confidence”</h3>
-    <p>It is how sure we are that a decision is supported by the evidence we collected. It is not a forecast of leads or case results, and nothing here guarantees an outcome. Pages from competitors’ paid campaigns were not always visible to us, so some of what we studied was their public pages.</p>
-   </div>
+  <p class="rt-flag">A note for the review. This part isn’t on the real page. It’s here so you can see our thinking.</p>
+  <h2 class="rt-h" id="h-why">Why we built it this way</h2>
+  <div class="rt-intro">
+   <p>We didn’t guess at this page. We looked at how people actually behave on Colony’s site, and at how the other firms in Los Angeles go after the same click. What follows is what we found, what we did about it, and how sure we are.</p>
+   <p>Each decision below has a number next to it. That’s how confident we are that the evidence backs it up. It isn’t a promise about leads or cases. Anything we weren’t at least 80% sure about stays out of the list and shows up near the end, labeled as a test.</p>
   </div>
 
-  <h3 class="rt-sub">Decisions we are confident in</h3>
-  <div class="rt-table" role="region" aria-label="Decisions and the evidence behind them" tabindex="0">
-   <table>
-    <thead><tr><th scope="col">Decision</th><th scope="col">Why</th><th scope="col">Confidence</th></tr></thead>
-    <tbody>
-<tr><th scope="row">A headline in the searcher’s own words<span>Case type plus place: “Hurt in a car accident in Los Angeles?”</span></th><td>Our ads and keywords use these words, while the live page leads with a city hero. The independent review found the strongest paid pages open with case type and place, and in our own review only one of six firms did, so this is a gap Colony can own.</td><td class="cf"><b>85%</b></td></tr>
-<tr><th scope="row">The phone number is the primary action, and always in reach<span>Large call number, sticky call bar on phones</span></th><td>Same tracking code, very different behavior: the Dallas car page earns a phone tap in roughly 1 of 4 visits, the LA car page in fewer than 1 of 100 since late October. Every firm we reviewed leads with a call ask, and about 65% of paid visits are on phones.</td><td class="cf"><b>90%</b></td></tr>
-<tr><th scope="row">Fee and costs wording sits next to the ask<span>“No attorney fee unless we win” with the costs disclosure under the buttons</span></th><td>Five of the six firms we studied, and the strongest pages in the independent review, keep the fee line beside the ask. The wording is copied from Colony’s own vetted page and meets the California costs-disclosure requirement. Counsel should still confirm it.</td><td class="cf"><b>90%</b></td></tr>
-<tr><th scope="row">Proof limited to facts Colony can back up<span>4.9 on Google, 175+ reviews, Kevin’s real background. No results, percentages or hours.</span></th><td>The independent review flagged success-rate and result claims as the highest-risk pattern. Review count comes from Colony’s own live page (as of October 2026).</td><td class="cf"><b>90%</b></td></tr>
-<tr><th scope="row">A light, fast page<span>About 250 KB, mobile score 95, no layout shift</span></th><td>Most paid keywords are rated below average for landing page experience in the Google Ads account today. The firms we reviewed range from about 0.6 MB to 5 MB.</td><td class="cf"><b>90%</b></td></tr>
-<tr><th scope="row">The lawyer and the team are visible in the first screen<span>Whole-team image with Kevin named in the caption</span></th><td>None of the six firms we studied shows its team beside a named responsible lawyer in the first screen. The independent report found named people outperform anonymous scale.</td><td class="cf"><b>80%</b></td></tr>
-<tr><th scope="row">The page mirrors the ad message<span>“Talk to us before you talk to their insurer”</span></th><td>Matching the page to the ad that earned the click is a long-established principle in conversion research, and this is the angle the ads already use.</td><td class="cf"><b>85%</b></td></tr>
-<tr><th scope="row">Education stays below the ask, and the scroll is short<span>Two answers-first sections and a five-question FAQ</span></th><td>The independent review found that paid pages that turned into articles lost the click. Colony’s visitors read for minutes but rarely act, so the page asks early and explains after.</td><td class="cf"><b>80%</b></td></tr>
-<tr><th scope="row">Three short steps, not a long process<span>What happens next: You, Colony Law, You</span></th><td>The compact three-step pattern appears on the paid pages the independent review rated highest, and it answers the “what happens if I call?” hesitation.</td><td class="cf"><b>80%</b></td></tr>
-<tr><th scope="row">Sticky call and form bar on phones<span>Appears once the first form scrolls away</span></th><td>Used by the strongest paid page in the independent review. With roughly two thirds of paid visits on phones, an action within thumb reach matters.</td><td class="cf"><b>80%</b></td></tr>
-<tr><th scope="row">Accessible by construction<span>Contrast, keyboard use, focus states, reduced motion, light and dark themes</span></th><td>Measured, not estimated: Lighthouse accessibility score of 100 on phone and desktop.</td><td class="cf"><b>95%</b></td></tr>
-    </tbody>
-   </table>
+  <h3 class="rt-sub">What we looked at</h3>
+  <p class="rt-p">Your own numbers from July to November: Google Analytics, Microsoft Clarity and CallRail. The Google Ads account, including keyword quality scores and landing page experience. Six Los Angeles injury firms, page by page, looking at layout, claims, speed, forms and calls to action. And an independent review of eleven Los Angeles landing pages that we read alongside our own. We couldn’t always see the exact page a firm sends its paid clicks to, so some of what we studied is their public site.</p>
+
+  <h3 class="rt-sub">What we’re sure about</h3>
+  <ol class="rt-list">
+<li><span class="pc">85%</span><div><h4>A headline in the searcher’s own words</h4><p>People type “car accident lawyer Los Angeles.” Your ads say the same thing. The old page opened with a city hero instead, so the click and the page weren’t saying the same thing. The strongest paid pages in the independent review match the search. Only one of the six firms we looked at does, which leaves that spot open for you.</p></div></li>
+<li><span class="pc">90%</span><div><h4>The phone number is the biggest thing on the page</h4><p>Same tracking code, two very different pages. On the Dallas car page, about one visit in four ends in a phone tap. On the LA page, since late October, it’s fewer than one in a hundred. Every firm we looked at puts a call button in the first screen, and about two thirds of your paid visitors are on a phone. So the number is large, and on a phone it follows you down the page.</p></div></li>
+<li><span class="pc">90%</span><div><h4>The fee line sits right next to the ask</h4><p>Five of the six firms keep it there, and so do the strongest pages in the independent review. We used the wording from your own vetted page, costs disclosure included. Counsel should still give it a final read.</p></div></li>
+<li><span class="pc">90%</span><div><h4>Only proof you can back up</h4><p>4.9 on Google, 175+ reviews, and Kevin’s real background. No results, no percentages, no hours. Those are the claims that get firms in trouble, and the independent review flagged them as the riskiest. The review count comes straight from your live page as of October.</p></div></li>
+<li><span class="pc">90%</span><div><h4>A page that loads fast</h4><p>It’s about 250 KB. The firms we looked at run from 0.6 MB to 5 MB. Most of your paid keywords are rated below average for landing page experience in Google Ads right now, so speed isn’t a nice extra here.</p></div></li>
+<li><span class="pc">80%</span><div><h4>Kevin and the team are in the first screen</h4><p>None of the six firms puts its team next to a named lawyer up top. The independent review found that people with names beat anonymous scale. That’s why Kevin’s name sits on the team photo.</p></div></li>
+<li><span class="pc">85%</span><div><h4>The page says what the ad says</h4><p>Your ads lead with “talk to us before you talk to their insurer,” so the page says it right back. When the page matches the ad, people don’t feel like they landed somewhere else.</p></div></li>
+<li><span class="pc">80%</span><div><h4>We ask first, then explain</h4><p>The independent review found that paid pages that turn into articles lose the click. Your visitors already read for minutes and rarely act. So the ask comes early and the explaining comes after.</p></div></li>
+<li><span class="pc">80%</span><div><h4>Three short steps</h4><p>The pages the independent review rated highest keep the process to three short steps. It answers “what happens if I call?” without a wall of text.</p></div></li>
+<li><span class="pc">80%</span><div><h4>A call and form bar on phones</h4><p>It shows up once the first form scrolls out of view, so there’s always a button under a thumb. The strongest paid page in the independent review does the same thing.</p></div></li>
+<li><span class="pc">95%</span><div><h4>It works for everyone</h4><p>This is the one we measured instead of estimated. Lighthouse scores it 100 for accessibility on phone and desktop.</p></div></li>
+  </ol>
+
+  <h3 class="rt-sub">How it looks, and why</h3>
+  <div class="rt-prose">
+   <p><b>One typeface, set big.</b> Someone who just got in a crash is stressed and probably on a phone. One clean typeface, large and tightly spaced, lets them get the point in a couple of seconds.</p>
+   <p><b>Ink, white, and a little gold.</b> There’s no decorative color. Gold shows up only where something matters: the line under the phone number, the final step, a few numerals. The only real color on the page is the photograph of your team, which is how it should be.</p>
+   <p><b>The ask first.</b> The call number and a two-field form are in the first screen, with the fee line and consent wording right under them. Reviews and Kevin’s background back the ask up. They don’t get in front of it.</p>
+   <p><b>The whole team.</b> The people who’ll answer the phone are shown together and uncropped, with Kevin named. We feathered the edges of the cut-out so it reads as one scene.</p>
+   <p><b>One line down the middle.</b> “What happens next” is symmetrical on purpose. Three equal steps show whose move it is: you, Colony Law, you. Then three equal prompts show what to say on the call. A worried person wants things to look orderly, and symmetry does that.</p>
+   <p><b>Small things that prevent mistakes.</b> The phone number formats itself as you type. Errors say exactly what’s wrong. The confirmation reads the number back and lets you fix it, so nobody gets a call on the wrong number.</p>
+   <p><b>Built for everybody.</b> Strong contrast, clear focus, full keyboard use, reduced motion for people who ask for it, light and dark themes, and a print version that keeps the phone number and the fee terms.</p>
+   <p class="rt-aside">Some of this is plain design judgment: the typeface, the colors, the spacing. We think it helps and we’d say about 70% on it, so none of it is in the list above.</p>
   </div>
 
-  <h3 class="rt-sub">The design elements, explained</h3>
-  <dl class="rt-dl">
-   <div><dt>One typeface, set large and tight</dt><dd>A single grotesque family keeps the page calm and quick to read on a phone. Large, tightly spaced headlines let someone who is stressed understand the page in two seconds.</dd></div>
-   <div><dt>Ink, white and one gold marker</dt><dd>The page uses no decorative color. Gold appears only where something needs attention: the underline on the phone number, the final decision step and a few numerals. The only real color on the page is in the photograph of the team.</dd></div>
-   <div><dt>The ask comes first, then the proof</dt><dd>The call number and a two-field form are in the first screen, with the fee line and consent wording directly beneath. Reviews and Kevin’s background support the ask instead of delaying it.</dd></div>
-   <div><dt>The whole team, standing on the edge of the page</dt><dd>The people who will take the call are shown together and uncropped, with Kevin named. The edges of the cut-out are feathered into the backdrop so the image reads as one scene.</dd></div>
-   <div><dt>One axis for the journey</dt><dd>“What happens next” is symmetrical on purpose. Three equal steps show whose move it is (you, Colony Law, you), then three equal prompts show what to say on the call. Symmetry reads as order, which is what a worried visitor needs.</dd></div>
-   <div><dt>Forms that prevent mistakes</dt><dd>The phone number formats as it is typed, errors are plain and specific, and the confirmation repeats the number back with a way to fix it before anyone calls the wrong person.</dd></div>
-   <div><dt>Built for every visitor</dt><dd>Strong contrast, clear focus states, keyboard navigation, reduced motion for people who ask for it, light and dark themes, and a print version that keeps the phone number and fee terms.</dd></div>
-  </dl>
-  <p class="rt-note">Typeface, palette and layout rhythm are design judgment, not measurement. We are roughly 70% confident they help and have kept them out of the table above.</p>
-
-  <h3 class="rt-sub">What we are testing, not claiming</h3>
-  <ul class="rt-test">
-   <li><b>Two form fields instead of seven.</b> The live form has seven fields, and the firms we studied range from two to seven or more with no pattern. We expect fewer fields to help, and we will measure it.</li>
-   <li><b>Phone-first with a short callback form.</b> A second version built call-first or form-first will be tested against this one.</li>
-   <li><b>The whole team instead of one portrait.</b> We will compare how visitors respond to the team image against a single lawyer portrait.</li>
+  <h3 class="rt-sub">What we want to test</h3>
+  <p class="rt-p">We think these will help, but we don’t know yet, so we’re not claiming them.</p>
+  <ul class="rt-tests">
+   <li>Two form fields instead of seven. The live form has seven, and the firms we studied run from two to seven or more with no pattern. We expect fewer to help, and we’ll measure it.</li>
+   <li>Calling first versus filling in the form first. We’ll build the other version and run them against each other.</li>
+   <li>The whole team versus one portrait of Kevin.</li>
   </ul>
 
   <h3 class="rt-sub">What we left out on purpose</h3>
-  <p>Case results and dollar amounts, success-rate percentages, “24/7” and response-time promises, client quotes and staff names. These are the highest-risk claims under California advertising rules, and the evidence we have does not require them. If Kevin and counsel approve one verified result with its disclaimer beside it, there is a place for it next to the ask.</p>
+  <p class="rt-p">Case results and dollar amounts, success-rate percentages, “24/7” and response-time promises, client quotes and staff names. These are the riskiest claims under California advertising rules, and the evidence we have doesn’t call for them. If Kevin and counsel approve one verified result with its disclaimer right beside it, there’s a spot for it next to the ask.</p>
 
-  <h3 class="rt-sub">What we need from Colony</h3>
-  <ul class="rt-test">
-   <li>A real group photograph and a current portrait of Kevin. The images here are placeholders.</li>
-   <li>Confirmation of the review count and rating, and the office hours shown on Google.</li>
-   <li>A decision on whether the logo’s “California | New York | Texas” line stays on a Los Angeles page.</li>
-   <li>Counsel’s approval of the fee wording and any Spanish wording for a Spanish-language version of this page.</li>
+  <h3 class="rt-sub">What we need from you</h3>
+  <ul class="rt-tests">
+   <li>A real group photo and a current portrait of Kevin. What’s here is placeholder.</li>
+   <li>The current review count and rating, and the hours Google shows for the office.</li>
+   <li>A call on whether the logo’s “California | New York | Texas” line stays on a Los Angeles page.</li>
+   <li>Counsel’s okay on the fee wording, and on the wording for a Spanish version of this page.</li>
   </ul>
 
-  <h3 class="rt-sub">How we will know it worked</h3>
-  <p>We will compare phone taps and form submissions per paid visit in Google Analytics, qualified calls of 60 seconds or longer in CallRail, and signed cases. At the current volume of paid clicks, a clear result takes several weeks, so we will read direction first in Clarity: scroll depth, quick exits and contact clicks.</p>
+  <h3 class="rt-sub">How we’ll know it’s working</h3>
+  <p class="rt-p">We’ll look at phone taps and form submissions per paid visit in Google Analytics, calls over 60 seconds in CallRail, and signed cases. With the paid click volume you have now, a clear answer takes a few weeks. Until then we’ll watch Clarity for the early signs: how far people scroll, how many leave right away, and how many tap to contact you.</p>
  </div>
 </section>
+
 
 
 <nav class="bar" aria-label="Quick actions"><a class="c" href="tel:+18662656699" aria-label="Call Colony Law at (866) 265-6699">Call</a><a class="f" href="#review">Leave your number</a></nav>
