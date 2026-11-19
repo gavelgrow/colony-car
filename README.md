@@ -1,21 +1,5 @@
-# Colony Dark Gold — LA Car Accident Lander
+# Colony Law: Los Angeles car accident landing page (design preview)
 
-Night-street Ads lander (palms, STOP, Hollywood sign). First-screen conversion, not an article.
+Design mockup for client review. Not the live site. The forms do not send anything.
 
-Live: https://gavelgrow.github.io/colony-car/
-
-## Files
-
-| File | Purpose |
-|------|---------|
-| `index.html` | GitHub Pages lander |
-| `styles.css` | Companion CSS |
-| `assets/la-night.jpg` | Night LA palm street |
-| `README.md` | This file |
-
-## Craft
-
-- Gold (`#C6A35A`) on wordmark + Call only; cream submit
-- Boxed form fields; solid dark panel
-- High-contrast cream type on dark left scrim
-- No FAQ, no why-us essay, no 99%, no fake faces
+Open the page and use "Show design notes" in the top bar to see the evidence behind each decision. The full rationale is at the bottom of the page.

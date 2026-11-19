@@ -1,118 +1,623 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Los Angeles Car Accident Lawyer | Colony Law</title>
-  <meta name="description" content="Hurt in a Los Angeles car accident? Free case review. No attorney fee unless we win.* Call (866) COLONY-9 — live intake 24/7." />
-  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
-  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1114" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230E1114'/%3E%3Cpath d='M21.5 11.2A7 7 0 1 0 21.5 20.8' fill='none' stroke='%23C9A24A' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<title>Los Angeles Car Accident Lawyer | Colony Law, P.C. (design mockup, v8)</title>
+<meta name="description" content="Design mockup for Colony Law's Los Angeles car accident landing page. Not live.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ---------- System ----------
+   Spacing scale: 4 8 12 16 24 32 48 72 112. One typeface. Ink on paper, one gold mark.
+   Color comes from the photograph. Light and dark are both designed, not inverted. */
+:root{
+  --bg:#FFFFFF; --surface:#F4F5F6; --ink:#0E1114; --ink2:#444C55; --ink3:#5C6570; --line:#DDE1E5;
+  --btn:#0E1114; --btn-fg:#FFFFFF; --btn-hover:#2A3036; --field:#FFFFFF; --field-line:#98A1AB;
+  --gold:#B88A2E; --gold-text:#85600F; --focus:#1B5FD1; --close-bg:#0E1114; --close-fg:#FFFFFF; --foot:#0A0D10;
+  --f:'Schibsted Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#0E1114; --surface:#14181C; --ink:#F2F4F6; --ink2:#B4BCC4; --ink3:#8D96A0; --line:#262C33;
+  --btn:#F2F4F6; --btn-fg:#0E1114; --btn-hover:#D9DEE3; --field:#14181C; --field-line:#4A535C;
+  --gold:#D3AD58; --gold-text:#D3AD58; --focus:#6EA2FF; --close-bg:#14181C; --close-fg:#F2F4F6; --foot:#090B0D;
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding:96px 0 112px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--f);font-variant-numeric:lining-nums;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;hanging-punctuation:first;padding-bottom:72px;position:relative}
+@media(min-width:900px){body{padding-bottom:0}}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:2px}
+::selection{background:var(--gold);color:#0E1114}
+h1,h2,h3{font-family:var(--f);margin:0;letter-spacing:-.03em;text-wrap:balance}
+p{margin:0 0 1em;text-wrap:pretty}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:#000;padding:12px 16px;z-index:200}.skip:focus{left:8px}
+.nb{white-space:nowrap}
+/* mock chrome (not part of the page) */
+.mockbar{background:#0A0D10;color:#9aa3ad;font:400 .78rem/1.3 var(--f);padding:8px 16px;display:flex;gap:16px;justify-content:center;align-items:center;flex-wrap:wrap;text-align:center}
+.mockbar button{font:600 .78rem/1 var(--f);color:#fff;background:transparent;border:1px solid #4A535C;border-radius:999px;padding:7px 14px;cursor:pointer;min-height:32px}
+.mockbar button[aria-pressed=true]{background:#C9A24A;border-color:#C9A24A;color:#0E1114}
+/* header */
+.top{background:color-mix(in srgb,var(--bg) 94%,transparent);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30;backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.top img{height:34px;width:auto}
+@media(prefers-color-scheme:light){.top img,footer img.lt{filter:invert(1)}}
+.top .tel{display:inline-flex;align-items:center;min-height:44px;font:700 1.0625rem/1 var(--f);text-decoration:none;white-space:nowrap;letter-spacing:-.01em;font-variant-numeric:tabular-nums lining-nums;background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 2px no-repeat;transition:background-size .35s var(--ease)}
+.top .tel i{font:500 .875rem/1 var(--f);font-style:normal;color:var(--ink3);margin-right:12px}
+.top .tel:hover{background-size:100% 2px}
+@media(max-width:519px){.top .tel i{display:none}}
+@media(min-width:760px){.top img{height:42px}}
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:2}
+.copy{padding:36px 0 8px}
+h1{font-size:clamp(2.55rem,10.6vw,3.3rem);line-height:1;letter-spacing:-.045em;font-weight:800}
+.sub{font-size:1.1875rem;line-height:1.5;color:var(--ink2);margin:20px 0 0;max-width:32ch}
+.sub b{color:var(--ink);font-weight:600}
+.ask{margin-top:32px}
+.call{display:inline-flex;align-items:center;gap:16px;text-decoration:none}
+.call .ico{flex:none;width:56px;height:56px;border-radius:50%;background:var(--btn);color:var(--btn-fg);display:grid;place-items:center;transition:transform .3s var(--ease),background-color .15s}
+.call:hover .ico{background:var(--btn-hover);transform:rotate(-8deg)}
+.call .ico svg{width:22px;height:22px}
+.call small{display:block;font:500 .875rem/1 var(--f);color:var(--ink3);margin-bottom:8px}
+.call strong{display:inline-block;font:800 clamp(1.85rem,7.4vw,2.4rem)/1.05 var(--f);letter-spacing:-.04em;font-variant-numeric:tabular-nums lining-nums;background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 3px no-repeat;padding-bottom:3px;transition:background-size .4s var(--ease)}
+.call:hover strong{background-size:100% 3px}
+.or{display:flex;align-items:center;gap:16px;margin:24px 0 16px;color:var(--ink3);font-size:.9rem;max-width:560px}
+.or::after{content:"";flex:1;height:1px;background:var(--line)}
+form.row{display:grid;gap:12px;max-width:560px}
+.field{position:relative}
+.field label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+input{width:100%;min-height:56px;padding:0 16px;border:1px solid var(--field-line);border-radius:4px;background:var(--field);color:var(--ink);font:400 1.125rem/1 var(--f);font-variant-numeric:tabular-nums;transition:border-color .15s,box-shadow .15s}
+input::placeholder{color:var(--ink3);opacity:1}
+input:hover{border-color:var(--ink2)}
+input:focus{outline:0;border-color:var(--ink);box-shadow:0 0 0 3px color-mix(in srgb,var(--ink) 16%,transparent)}
+.err{display:none;color:#C2392B;font-size:.9rem;margin-top:6px}.field.bad .err{display:block}.field.bad input{border-color:#C2392B}
+@media(prefers-color-scheme:dark){.err{color:#FF8D80}.field.bad input{border-color:#FF8D80}}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 28px;background:var(--btn);color:var(--btn-fg);border:1px solid var(--btn);border-radius:4px;font:600 1.0625rem/1 var(--f);letter-spacing:-.005em;cursor:pointer;text-decoration:none;transition:background-color .15s,transform .1s;white-space:nowrap}
+.btn:hover{background:var(--btn-hover);border-color:var(--btn-hover)}
+.btn:active{transform:translateY(1px)}
+.fee{margin:16px 0 0;font-size:.875rem;line-height:1.55;color:var(--ink2);max-width:560px}
+.fee b{color:var(--ink);font-weight:600}
+.fine{margin:12px 0 0;font-size:.8125rem;line-height:1.55;color:var(--ink3);max-width:560px}
+.fine a,.fee a{color:var(--ink2);text-underline-offset:3px}
+.proof{margin:24px 0 0;padding:0;list-style:none;font-size:.95rem;color:var(--ink2);display:flex;flex-wrap:wrap;gap:4px 24px}
+.proof b{color:var(--ink);font-weight:600}
+.done{display:none;max-width:560px;padding:20px 20px 18px;border:1px solid var(--line);border-radius:4px;background:var(--surface)}
+.done.show{display:block}
+.done h2{font-size:1.375rem;letter-spacing:-.03em;margin:0 0 6px}
+.done p{margin:0 0 8px;color:var(--ink2)}
+.done button{font:600 .95rem var(--f);color:var(--ink);background:none;border:0;padding:8px 0;text-decoration:underline;text-underline-offset:3px;cursor:pointer;min-height:44px}
+.done .mk{font-size:.8125rem;color:var(--ink3)}
+.photo{position:relative;margin-top:32px;background:linear-gradient(90deg,#8E8A82,#98A0A3 55%,#9FAEB4)}
+.photo img{width:100%;max-width:520px;margin:0 auto;aspect-ratio:1/1;object-fit:cover;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 14%);mask-image:linear-gradient(to bottom,transparent 0,#000 14%)}
+.photo::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.14;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.photo figcaption{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:56px 24px 20px;background:linear-gradient(to top,rgba(10,13,16,.78),transparent);color:#fff;font-size:.9rem;line-height:1.45}
+.photo figcaption b{display:block;font-weight:700;font-size:1.0625rem;letter-spacing:-.01em}
+@media(min-width:900px){
+ .hero{min-height:760px;display:flex;align-items:center}
+ .hero .wrap{width:100%}
+ .copy{padding:72px 0 80px;max-width:min(660px,calc(59vw - 48px))}
+ h1{font-size:clamp(3.6rem,5.6vw,5.1rem)}
+ .sub{font-size:1.3125rem}
+ .ask{margin-top:40px}
+ form.row{grid-template-columns:1fr 1fr auto;max-width:none;gap:12px;align-items:start}
+ .or,.fee,.fine,.done{max-width:100%}
+ .photo{position:absolute;top:0;right:0;bottom:0;width:41%;margin:0}
+ .photo img{position:absolute;bottom:0;left:0;max-width:none;width:100%;height:auto;margin:0}
+ .photo figcaption{padding:64px 40px 32px}
+}
+
+/* insurer section: three moments, set large, with the person behind the advice */
+.ins{--ins-bg:#0E1114;background:var(--ins-bg);color:#fff;padding:80px 0}
+@media(prefers-color-scheme:dark){.ins{--ins-bg:#171C21}}
+.ins .h2{color:#fff;max-width:13ch}
+.ins .lead{color:#B9C1C9;margin:24px 0 32px;max-width:36ch}
+.ins .btn.light{background:#fff;color:#0E1114;border-color:#fff}.ins .btn.light:hover{background:#E4E8EB}
+.ins-grid{display:flex;flex-direction:column}
+.ins-lead,.ins-body{display:contents}
+.ins .h2{order:1}.ins .lead{order:2;margin:24px 0 32px}.moments{order:3}.ins .btn.light{order:4;align-self:flex-start;margin-top:40px}.why{order:5}
+.moments{list-style:none;margin:0;padding:0;counter-reset:m}
+.moments li{display:grid;grid-template-columns:44px 1fr;gap:8px;align-items:baseline;padding:24px 0;border-top:1px solid #2B323A;position:relative}
+.moments li:last-child{border-bottom:1px solid #2B323A}
+.moments .n{font:600 .8125rem/1 var(--f);letter-spacing:.08em;color:#C9A24A;font-variant-numeric:tabular-nums}
+.moments .t{font:700 clamp(1.5rem,5.2vw,2.25rem)/1.12 var(--f);letter-spacing:-.035em;text-wrap:balance;transition:transform .35s var(--ease)}
+.moments li::before{content:"";position:absolute;left:0;top:-1px;height:1px;width:0;background:#C9A24A;transition:width .5s var(--ease)}
+.moments li:hover::before{width:100%}
+.moments li:hover .t{transform:translateX(6px)}
+.why{margin:40px 0 0;display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start}
+.why img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:50% 14%;filter:grayscale(1) contrast(1.05)}
+.why figcaption b{display:block;font-weight:700;font-size:1.0625rem;letter-spacing:-.01em}
+.why figcaption span{display:block;color:#98A1AB;font-size:.875rem;margin:2px 0 12px}
+.why figcaption p{margin:0;color:#C3CAD1;font-size:1rem;max-width:52ch;padding-left:16px;border-left:2px solid #C9A24A}
+@media(min-width:900px){
+ .ins{padding:120px 0}
+ .ins-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:104px;align-items:start}
+ .ins-lead{display:block;position:sticky;top:112px}
+ .ins-body{display:block}
+ .ins .btn.light{margin-top:0}
+ .ins .lead{margin:24px 0 32px}
+ .why{margin-top:56px}
+}
+@media(prefers-reduced-motion:reduce){.moments .t,.moments li::before{transition:none}}
+
+/* what happens next: one centered axis. steps on a rail, then what to say, mirrored 3 + 3 */
+.h2.mid{margin-left:auto;margin-right:auto;text-align:center;max-width:20ch}
+.steps3{list-style:none;margin:56px 0 0;padding:0;display:grid;gap:56px}
+.st{position:relative;text-align:center;padding-top:44px}
+.st::after{content:"";position:absolute;left:50%;top:0;width:18px;height:18px;margin-left:-9px;border-radius:50%;box-sizing:border-box;border:2px solid var(--ink);background:var(--surface);z-index:1}
+.st.us::after{background:var(--ink)}
+.st.last::after{border-color:var(--gold);background:var(--gold)}
+.st::before{content:"";position:absolute;left:calc(50% - 1px);top:calc(100% + 8px);height:40px;width:2px;background:var(--line)}
+.st.last::before{display:none}
+.who{display:block;font:500 .9375rem/1 var(--f);color:var(--ink2);margin:0 0 12px}
+.st h3{font-size:clamp(1.6rem,5.6vw,2rem);line-height:1.08;letter-spacing:-.035em;font-weight:800;margin:0 auto 12px;max-width:14ch}
+.st p{margin:0 auto;color:var(--ink2);font-size:1.0625rem;max-width:30ch;text-wrap:balance}
+.more{position:relative;margin:72px auto 0;padding-top:72px;text-align:center;max-width:900px}
+.stem{position:absolute;left:calc(50% - 1px);top:0;width:2px;height:48px;background:var(--line)}
+.more h4{font-size:clamp(1.6rem,5.4vw,2.25rem);line-height:1.08;letter-spacing:-.04em;font-weight:800;margin:0 auto 14px;max-width:30ch}
+.ok{margin:0 auto 40px;color:var(--ink2);font-size:1.0625rem;max-width:46ch}
+.tell{list-style:none;margin:0 0 48px;padding:0;display:grid;gap:32px}
+.tell li{display:flex;flex-direction:column;align-items:center;gap:6px}
+.ic{width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:var(--bg);display:grid;place-items:center;color:var(--ink);margin-bottom:10px;transition:background-color .25s,color .25s,border-color .25s}
+.ic svg{width:22px;height:22px}
+.tell li:hover .ic{background:var(--btn);color:var(--btn-fg);border-color:var(--btn)}
+.tell b{font:700 1.1875rem/1.28 var(--f);letter-spacing:-.02em;max-width:20ch}
+.tell .s{color:var(--ink2);font-size:1rem}
+.say-call{display:inline-block;font:800 clamp(1.8rem,6.4vw,2.4rem)/1.05 var(--f);letter-spacing:-.04em;text-decoration:none;font-variant-numeric:tabular-nums lining-nums;padding-bottom:5px;background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 3px no-repeat;transition:background-size .4s var(--ease)}
+.say-call small{display:block;font:500 .875rem/1 var(--f);letter-spacing:0;color:var(--ink3);margin-bottom:10px}
+.say-call:hover{background-size:100% 3px}
+@media(min-width:900px){
+ .steps3{grid-template-columns:repeat(3,1fr);gap:0 48px;margin-top:72px}
+ .st::before{left:calc(50% + 11px);right:auto;top:8px;bottom:auto;width:calc(100% + 48px - 22px);height:2px}
+ .st.last::before{display:none}
+ .tell{grid-template-columns:repeat(3,1fr);gap:40px}
+ .more{margin-top:88px;padding-top:88px}
+ .stem{height:64px}
+}
+/* FAQ: one open at a time, answers aligned to the question text */
+.faq-grid{display:flex;flex-direction:column}
+.faq-lead{display:contents}
+.faq .h2{order:1;margin-bottom:40px}.faq-list{order:2}.faq .areas{order:3}
+.faq .areas{margin:32px 0 0;font-size:.9375rem;color:var(--ink2);max-width:40ch}
+.faq .areas b{display:block;color:var(--ink);font-weight:700;margin-bottom:8px}
+.faq .areas p{margin:0}
+.faq-list{border-top:2px solid var(--ink)}
+.faq-list details{border-bottom:1px solid var(--line)}
+.faq-list summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:36px 1fr 40px;gap:8px;align-items:center;padding:24px 0;min-height:76px;font:700 clamp(1.1875rem,3.8vw,1.5rem)/1.22 var(--f);letter-spacing:-.03em;border-radius:2px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list .n{font:600 .8125rem/1 var(--f);letter-spacing:.06em;color:var(--gold-text);font-variant-numeric:tabular-nums}
+.faq-list .q{text-wrap:balance}
+.faq-list .chev{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--ink);transition:transform .35s var(--ease),background-color .2s,color .2s,border-color .2s}
+.faq-list summary:hover .chev{border-color:var(--ink)}
+.faq-list details[open] .chev{transform:rotate(180deg);background:var(--btn);color:var(--btn-fg);border-color:var(--btn)}
+.faq-list .ans{padding:0 48px 32px 44px}
+.faq-list .ans p{margin:0;color:var(--ink2);font-size:1.0625rem;max-width:58ch}
+@media(prefers-reduced-motion:no-preference){.faq-list details[open] .ans{animation:ansIn .4s var(--ease)}@keyframes ansIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}}
+@media(max-width:599px){.faq-list .ans{padding-right:0}.faq-list summary{grid-template-columns:28px 1fr 40px}.faq-list .ans{padding-left:36px}}
+@media(min-width:900px){
+ .faq-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:104px;align-items:start}
+ .faq-lead{display:block;position:sticky;top:112px}
+ .faq .h2{margin-bottom:0}
+}
+@media print{.faq-list details>.ans{display:block!important}}
+
+/* hero image: the whole team, standing on the panel's bottom edge */
+.photo{background:radial-gradient(70% 55% at 50% 78%,rgba(255,255,255,.30),transparent 70%),linear-gradient(90deg,#8E8A82,#98A0A3 55%,#9FAEB4);overflow:hidden;min-height:260px}
+.photo::after{opacity:.1}
+.photo img{position:absolute;left:-9%;bottom:0;width:118%;max-width:none;height:auto;aspect-ratio:auto;margin:0;-webkit-mask-image:none;mask-image:none}
+.photo figcaption{position:relative;top:auto;bottom:auto;left:auto;right:auto;z-index:2;background:none;color:#0E1114;padding:28px 24px 0;font-size:.9375rem;line-height:1.45;max-width:30ch}
+.photo figcaption b{font-weight:800;font-size:1.125rem;letter-spacing:-.02em;color:#0E1114}
+@media(max-width:899px){.photo{margin:32px 0 0;min-height:0;padding-bottom:calc(118vw * .432)}.photo img{width:118%}}
+@media(min-width:900px){
+ .hero .photo{width:48%;max-width:none}
+ .hero .photo figcaption{position:absolute;top:0;left:0;padding:48px 40px 0;max-width:34ch}
+ .hero .photo img{width:140%;left:-20%}
+ .copy{max-width:min(660px,calc(52vw - max(24px,(100vw - 1180px)/2 + 24px) - 40px))}
+}
+@media(min-width:900px) and (max-width:1199px){form.row{grid-template-columns:1fr 1fr}form.row .btn{grid-column:1/-1}}
+
+/* hero v2: headline left, the ask right, the whole team standing on the section's bottom edge (uncropped) */
+.hero-top{display:grid;gap:0}
+.hero .copy{padding:36px 0 0}
+.hero .ask{margin-top:28px}
+.team{position:relative;margin:56px 0 0;overflow:hidden;background:radial-gradient(60% 70% at 50% 85%,rgba(255,255,255,.34),transparent 72%),linear-gradient(90deg,#8E8A82,#98A0A3 52%,#9FAEB4)}
+.team::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.1;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.team img{display:block;position:static;width:100%;max-width:880px;height:auto;margin:0 auto;aspect-ratio:auto;transform:none;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 91%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 91%,transparent 100%)}
+.team figcaption{position:relative;z-index:2;padding:24px 24px 0;color:#0E1114;font-size:.9375rem;line-height:1.45;max-width:34ch}
+.team figcaption b{display:block;font-weight:800;font-size:1.125rem;letter-spacing:-.02em}
+@media(min-width:900px){
+ .hero{display:block;min-height:0}
+ .hero-top{grid-template-columns:1.02fr .98fr;gap:88px;align-items:center;padding-top:72px}
+ .hero .copy{padding:0;max-width:none}
+ .hero .copy h1{max-width:10ch}
+ .hero .ask{margin-top:0}
+ .hero form.row{grid-template-columns:1fr 1fr;max-width:none}
+ .hero form.row .btn{grid-column:1/-1}
+ .team{margin-top:72px;padding-top:84px}
+ .team figcaption{position:absolute;top:32px;left:max(24px,calc((100vw - 1180px)/2 + 24px));padding:0;max-width:30ch}
+ .team img{max-width:880px}
+}
+@media(min-width:900px) and (max-width:1199px){.hero form.row{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:no-preference){.team img{animation:settle 1.2s var(--ease) both}}
+/* sections */
+section{padding:72px 0}
+@media(min-width:900px){section{padding:112px 0}}
+.h2{font-size:clamp(1.9rem,4.6vw,2.9rem);line-height:1.04;letter-spacing:-.04em;font-weight:800;max-width:17ch}
+.surface{background:var(--surface)}
+.split{display:grid;gap:32px}
+@media(min-width:900px){.split{grid-template-columns:.9fr 1.1fr;gap:96px;align-items:start}}
+.lead{font-size:1.1875rem;line-height:1.55;color:var(--ink2);margin:0 0 24px;max-width:44ch}
+.list{list-style:none;margin:0;padding:0;max-width:46ch}
+.list li{padding:16px 0 16px 24px;border-top:1px solid var(--line);font-size:1.125rem;font-weight:500;position:relative}
+.list li:last-child{border-bottom:1px solid var(--line)}
+.list li::before{content:"";position:absolute;left:0;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:var(--gold)}
+.note{margin:24px 0 0;color:var(--ink2);max-width:46ch}
+.steps{list-style:none;margin:48px 0 0;padding:0;display:grid;gap:32px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding-top:20px;border-top:2px solid var(--ink)}
+.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;top:20px;right:0;font:600 .8125rem/1 var(--f);letter-spacing:.06em;color:var(--ink3);font-variant-numeric:tabular-nums}
+.steps h3{font-size:1.3rem;letter-spacing:-.025em;font-weight:700;margin:0 0 8px;max-width:16ch}
+.steps p{margin:0;color:var(--ink2);max-width:34ch}
+@media(min-width:900px){.steps{grid-template-columns:repeat(3,1fr);gap:48px;margin-top:64px}}
+.qa{display:grid;gap:32px;margin-top:48px}
+.qa h3{font-size:1.1875rem;letter-spacing:-.02em;font-weight:700;margin:0 0 8px;line-height:1.3}
+.qa p{margin:0;color:var(--ink2);max-width:50ch}
+@media(min-width:900px){.qa{grid-template-columns:1fr 1fr;gap:48px 96px;margin-top:64px}}
+.areas{margin:56px 0 0;color:var(--ink3);font-size:.9375rem;max-width:72ch}
+/* closing + footer */
+.close{background:var(--close-bg);color:var(--close-fg);padding:88px 0}
+.close-grid{display:grid;gap:48px}
+.close h2#h-close{font-size:clamp(2.6rem,10vw,5.2rem);line-height:.98;letter-spacing:-.05em;font-weight:800;max-width:9ch;margin:0}
+.close-sub{margin:24px 0 0;color:color-mix(in srgb,var(--close-fg) 68%,transparent);max-width:34ch;font-size:1.1875rem;line-height:1.5}
+.close .ph{display:inline-block;font:800 clamp(2.1rem,8.4vw,3.4rem)/1.05 var(--f);letter-spacing:-.045em;text-decoration:none;color:var(--close-fg);font-variant-numeric:tabular-nums lining-nums;padding-bottom:6px;background:linear-gradient(var(--gold),var(--gold)) 0 100%/100% 3px no-repeat;transition:background-size .5s var(--ease)}
+.close .ph small{display:block;font:500 .9375rem/1 var(--f);letter-spacing:0;color:color-mix(in srgb,var(--close-fg) 58%,transparent);margin-bottom:12px}
+.close .ph:hover{background-size:0 3px;background-position:100% 100%}
+.or2{display:flex;align-items:center;gap:16px;margin:32px 0 16px;color:color-mix(in srgb,var(--close-fg) 58%,transparent);font-size:.9rem}
+.or2::after{content:"";flex:1;height:1px;background:#2E353C}
+.close form.row{max-width:none}
+.close input{border-color:#4A535C;background:rgba(255,255,255,.05);color:#fff}
+.close input::placeholder{color:#9AA3AD}
+.close input:focus{border-color:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.2)}
+.close .btn{background:#fff;color:#0E1114;border-color:#fff}.close .btn:hover{background:#E4E8EB}
+.close .done{background:rgba(255,255,255,.06);border-color:#3A424A;color:#fff;max-width:none}.close .done p{color:#C7CED5}.close .done button{color:#fff}.close .done .mk{color:#9AA3AD}
+.close .err{color:#FF8D80}
+.close-fine{margin:16px 0 0;font-size:.8125rem;line-height:1.55;color:#8F98A2;max-width:60ch}
+@media(min-width:900px){
+ .close{padding:136px 0}
+ .close-grid{grid-template-columns:1.05fr .95fr;gap:104px;align-items:center}
+ .close form.row{grid-template-columns:1fr 1fr;gap:12px}
+ .close form.row .btn{grid-column:1/-1}
+}
+footer{background:var(--foot);color:#98A1AB;padding:72px 0 40px;font-size:.875rem;line-height:1.6}
+footer .foot{max-width:1180px}
+.foot-top{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-bottom:40px;border-bottom:1px solid #20262C}
+.foot-top img{height:40px;width:auto}
+.foot-tel{font:700 1.25rem/1 var(--f);letter-spacing:-.02em;color:#fff;text-decoration:none;font-variant-numeric:tabular-nums lining-nums;min-height:44px;display:inline-flex;align-items:center}
+.foot-tel:hover{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:6px;text-decoration-thickness:2px}
+.foot-cols{display:grid;gap:40px;padding:48px 0}
+.foot-cols section{padding:0}
+.foot-cols h2{font:600 .8125rem/1 var(--f);letter-spacing:.06em;text-transform:uppercase;color:#C9A24A;margin:0 0 16px}
+.foot-cols p{margin:0 0 12px;max-width:60ch}
+.foot-cols b{color:#E3E7EA;font-weight:600}
+.foot-base{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:24px;border-top:1px solid #20262C;font-size:.8125rem;color:#7C858F}
+@media(min-width:900px){.foot-cols{grid-template-columns:.8fr 1.2fr 1.2fr;gap:64px}.foot-top img{height:48px}}
+
+/* design rationale (review only) */
+.rt{background:var(--bg);border-top:1px solid var(--line);padding:88px 0 112px;color:var(--ink)}
+.rt-wrap{max-width:980px}
+.rt-flag{display:inline-block;margin:0 0 24px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;font:600 .8125rem/1 var(--f);color:var(--ink2);background:var(--surface)}
+.rt-h{font-size:clamp(2rem,6vw,3.25rem);line-height:1.04;letter-spacing:-.045em;font-weight:800;margin:0 0 20px;max-width:18ch}
+.rt-lead{font-size:1.1875rem;line-height:1.6;color:var(--ink2);max-width:62ch;margin:0 0 48px}
+.rt h3{font-size:1.25rem;letter-spacing:-.02em;font-weight:800;margin:0 0 12px}
+.rt-sub{margin-top:64px!important;font-size:clamp(1.5rem,4.4vw,2rem)!important;letter-spacing:-.035em!important}
+.rt-cols{display:grid;gap:40px}
+.rt ul{margin:0;padding:0 0 0 20px;color:var(--ink2)}
+.rt li{margin:0 0 8px}
+.rt p{color:var(--ink2)}
+.rt-table{margin-top:24px;overflow-x:auto;border-top:2px solid var(--ink);-webkit-overflow-scrolling:touch}
+.rt-table table{width:100%;border-collapse:collapse;min-width:640px;font-size:.9375rem;line-height:1.5}
+.rt-table thead th{text-align:left;font:600 .8125rem/1 var(--f);letter-spacing:.04em;color:var(--ink3);padding:16px 16px 12px 0;border-bottom:1px solid var(--line)}
+.rt-table tbody th,.rt-table td{vertical-align:top;text-align:left;padding:20px 16px 20px 0;border-bottom:1px solid var(--line)}
+.rt-table tbody th{font-weight:700;width:30%}
+.rt-table tbody th span{display:block;font-weight:400;color:var(--ink2);margin-top:6px;font-size:.875rem}
+.rt-table td{color:var(--ink2)}
+.rt-table .cf{width:92px;white-space:nowrap}
+.rt-table .cf b{display:inline-block;font:800 1.125rem/1 var(--f);color:var(--ink);letter-spacing:-.02em;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.rt-dl{margin:24px 0 0;display:grid;gap:0;border-top:2px solid var(--ink)}
+.rt-dl>div{display:grid;gap:6px;padding:22px 0;border-bottom:1px solid var(--line)}
+.rt-dl dt{font-weight:700;font-size:1.0625rem;letter-spacing:-.015em}
+.rt-dl dd{margin:0;color:var(--ink2)}
+.rt-note{margin-top:20px;font-size:.9375rem}
+.rt-test{padding-left:20px}
+@media(min-width:900px){
+ .rt-cols{grid-template-columns:1fr 1fr;gap:72px}
+ .rt-dl>div{grid-template-columns:280px 1fr;gap:48px}
+ .rt-table table{min-width:0}
+}
+@media print{.rt{break-before:page}}
+/* sticky bar */
+.bar{position:fixed;inset:auto 0 0 0;z-index:40;background:var(--bg);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1.3fr;gap:10px;transform:translateY(110%);transition:transform .3s var(--ease)}
+.bar.on{transform:none}
+.bar a{min-height:52px;display:flex;align-items:center;justify-content:center;border-radius:4px;font:600 1rem var(--f);text-decoration:none;border:1px solid var(--btn)}
+.bar .c{background:var(--bg);color:var(--ink)}.bar .f{background:var(--btn);color:var(--btn-fg)}
+@media(min-width:900px){.bar{display:none}}
+/* entrance: once, short, respects reduced motion */
+@media(prefers-reduced-motion:no-preference){
+ .copy h1,.copy .sub,.copy .ask{animation:rise .8s var(--ease) both}
+ .copy .sub{animation-delay:.07s}.copy .ask{animation-delay:.14s}
+ .photo img{animation:settle 1.4s var(--ease) both}
+ @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+ @keyframes settle{from{opacity:0;transform:scale(1.035)}to{opacity:1;transform:none}}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+/* design notes overlay (mock only) */
+.pin{position:absolute;z-index:60;width:28px;height:28px;border-radius:50%;border:2px solid #fff;background:#C9A24A;color:#0E1114;font:700 .8rem/1 var(--f);display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.35);padding:0}
+.pop{position:absolute;z-index:70;width:min(340px,calc(100vw - 24px));background:#0E1114;color:#F2F4F6;border-radius:6px;padding:16px 18px 16px;box-shadow:0 18px 40px rgba(0,0,0,.4);font:400 .875rem/1.5 var(--f)}
+.pop b{display:block;font-size:.95rem;margin-bottom:4px;color:#fff}
+.pop em{display:inline-block;font-style:normal;font-weight:700;font-size:.6875rem;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:999px;margin-bottom:8px;background:#26303A;color:#C9A24A}
+.pop p{margin:0}
+@media print{.mockbar,.bar,.pin,.pop,.photo::after{display:none!important}.top{position:static}.hero{min-height:0}.photo{position:static;width:auto;margin-top:16px}.photo img{position:static;max-width:240px;mask:none;-webkit-mask:none}.close{background:#fff;color:#000}.close *{color:#000!important}body{padding:0}}
+</style>
 </head>
 <body>
-  <a class="skip" href="#review">Skip to free review</a>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mockbar" role="note"><span>Design mockup (v8). Not live. The form sends nothing.</span><button id="notesBtn" type="button" aria-pressed="false">Show design notes</button></div>
+<header class="top"><div class="wrap">
+  <a href="#top" aria-label="Colony Law home"><img src="assets/colony-logo-full-white.png" alt="Colony Law" width="1817" height="348"></a>
+  <a class="tel" href="tel:+18662656699"><i>Call now</i>(866)&#8239;265-6699</a>
+</div></header>
 
-  <div class="page">
-    <div class="bg" aria-hidden="true">
-      <img class="bg-photo" src="assets/la-night.jpg" alt="" width="1600" height="1066" decoding="async" fetchpriority="high" />
-      <div class="bg-scrim"></div>
-    </div>
-    <div class="visually-hidden" role="img" aria-label="Los Angeles night street lined with palm trees, looking toward the Hollywood sign, with a STOP sign and cars"></div>
+<main id="main">
+<section class="hero" id="top" style="padding:0">
+ <div class="wrap hero-top">
+  <div class="copy">
+   <h1 id="n-h1">Hurt in a car accident in <span class="nb">Los Angeles?</span></h1>
+   <p class="sub">Tell Colony Law’s team what happened. The case review is free, and there is <b>no attorney fee unless we win.*</b></p>
+  </div>
+  <div class="ask" id="review">
+    <a class="call" id="n-call" href="tel:+18662656699"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><span><small>Call Colony Law</small><strong>(866)&#8239;265-6699</strong></span></a>
+    <p class="or">or leave your number and we call you</p>
+    <form class="row" id="lead" novalidate>
+     <div class="field" id="f-name"><label for="name">First name</label><input id="name" type="text" placeholder="First name" autocomplete="given-name" required aria-required="true" aria-describedby="e-name"><span class="err" id="e-name" role="alert">Please enter your first name.</span></div>
+     <div class="field" id="f-phone"><label for="phone">Mobile phone</label><input id="phone" type="tel" inputmode="tel" placeholder="Mobile phone" autocomplete="tel-national" required aria-required="true" aria-describedby="e-phone"><span class="err" id="e-phone" role="alert">Please enter a 10-digit number we can reach you on.</span></div>
+     <button class="btn" type="submit">Please call me</button>
+    </form>
+    <div class="done" id="done" role="status" aria-live="polite" tabindex="-1"><h2>Thank you, <span id="dn"></span>.</h2><p>Our team will call <b id="dp"></b>. If that number is wrong, fix it so we can reach you.</p><button type="button" id="redo">Change my number</button><p class="mk">Mockup only. Nothing was sent.</p></div>
+    <p class="fee" id="n-fee">*<b>No attorney fee unless we win.</b> Our fee is a percentage of your settlement or verdict. You’re responsible for case costs we advance, even if your case doesn’t result in a recovery. <a href="#fees">Full terms</a>.</p>
+    <p class="fine">By submitting, you agree Colony Law may call you about your request. A member of our team will contact you. Submitting this form does not create an attorney-client relationship.</p>
+    <ul class="proof" id="n-proof"><li><b>4.9 on Google</b>, 175+ reviews</li><li>Spanish-speaking intake staff</li></ul>
+   </div>
+ </div>
+ <figure class="team" id="n-photo"><figcaption><b>The Colony Law team</b>Kevin K. Javidzad, Managing Attorney, leads it.</figcaption><img src="assets/team.webp" alt="The Colony Law team, standing together" width="1024" height="442"></figure>
+</section>
 
-    <div class="wrap">
-      <header class="site-head">
-        <div class="logo">Colony</div>
-        <a class="phone" href="tel:+18662656699">(866) COLONY-9</a>
-      </header>
+<section class="ins" aria-labelledby="h-ins">
+ <div class="wrap ins-grid">
+  <div class="ins-lead">
+   <h2 class="h2" id="h-ins">Talk to us before you talk to their insurer.</h2>
+   <p class="lead">Insurers often start investigating quickly. A free review helps you understand where you stand before you:</p>
+   <a class="btn light" href="#review">Get my free case review</a>
+  </div>
+  <div class="ins-body">
+   <ol class="moments">
+    <li><span class="n">01</span><span class="t">give a recorded statement</span></li>
+    <li><span class="n">02</span><span class="t">sign a release or accept a repair number</span></li>
+    <li><span class="n">03</span><span class="t">settle your injury claim</span></li>
+   </ol>
+   <figure class="why">
+    <img src="assets/kevin.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+    <figcaption><b>Kevin K. Javidzad</b><span>Managing Attorney, Colony Law</span><p>Kevin handled complex business disputes at a Century City firm before focusing on personal injury. There he saw how corporations and insurers evaluate liability and financial exposure.</p></figcaption>
+   </figure>
+  </div>
+ </div>
+</section>
 
-      <nav class="lang" aria-label="Language">
-        <span aria-current="true">English</span>
-        <a href="#es" lang="es">Español — consulta gratis</a>
-      </nav>
+<section class="surface flow" aria-labelledby="h-how">
+ <div class="wrap">
+  <h2 class="h2 mid" id="h-how">What happens next</h2>
+  <ol class="steps3">
+   <li class="st you"><span class="who">You</span><h3>You call or leave your number</h3><p>It takes under a minute.</p></li>
+   <li class="st us"><span class="who">Colony Law</span><h3>We review and call you</h3><p>Our team reviews what you shared and talks through your options.</p></li>
+   <li class="st you last"><span class="who">You</span><h3>You decide</h3><p>You choose whether to hire us. If you do, we deal with the insurance company so you can focus on recovering.</p></li>
+  </ol>
+  <div class="more" role="group" aria-labelledby="h-say">
+   <span class="stem" aria-hidden="true"></span>
+   <h4 id="h-say">When you call, tell us three things</h4>
+   <p class="ok">That is enough to start. You do not need your documents, and it is fine if you do not know the details yet.</p>
+   <ol class="tell">
+    <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 1 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg></span><b>Where it happened</b><span class="s">Even just a cross street</span></li>
+    <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2.2-5.5 4 11 2.3-5.5H21"/></svg></span><b>What hurts</b><span class="s">Even if it seems small</span></li>
+    <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v11H9.5L5 20.5v-4H4z"/></svg></span><b>Whether the other driver’s insurer has already contacted you</b></li>
+   </ol>
+   <a class="say-call" href="tel:+18662656699"><small>Call Colony Law</small>(866)&#8239;265-6699</a>
+  </div>
+ </div>
+</section>
 
-      <div class="layout">
-        <div>
-          <p class="eyebrow">Los Angeles · Car accident</p>
-          <h1>Hurt in a Los Angeles car accident that wasn’t your fault?</h1>
-          <p class="sub">Free case review. We take the insurer off your phone.</p>
-          <a class="call" href="tel:+18662656699">Call now</a>
-          <p class="trust"><strong>No attorney fee unless we win.*</strong> Client may be responsible for costs.</p>
-          <p class="stars">4.9★ Google · 177 reviews</p>
+<section class="faq" aria-labelledby="h-faq">
+ <div class="wrap faq-grid">
+  <div class="faq-lead">
+   <h2 class="h2" id="h-faq">Questions drivers ask after a crash</h2>
+   <div class="areas"><b>Where we help</b><p>Crashes we handle: car, Uber and Lyft, motorcycle, truck, pedestrian and bicycle. Our office is in Los Angeles. We serve Los Angeles, Beverly Hills, Santa Monica, Culver City, Westwood, Pasadena and Long Beach. Consultations by phone or by appointment.</p></div>
+  </div>
+  <div class="faq-list">
+   <details name="faq" open><summary><span class="n">01</span><span class="q">Do I pay anything to start my case?</span><span class="chev" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l5 5 5-5"/></svg></span></summary><div class="ans"><p>No. We work on a contingency fee, which means there is no attorney fee unless we win your case. Our fee is a percentage of your settlement or verdict. You are responsible for case costs we advance, such as medical record fees, even if there is no recovery. The fee agreement explains this before you sign.</p></div></details>
+   <details name="faq"><summary><span class="n">02</span><span class="q">Does sharing the blame end my claim?</span><span class="chev" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l5 5 5-5"/></svg></span></summary><div class="ans"><p>No. In California, a driver who was partly at fault can still recover under pure comparative negligence. The amount is reduced by that driver’s percentage of fault.</p></div></details>
+   <details name="faq"><summary><span class="n">03</span><span class="q">What is the time limit after a car accident in Los Angeles?</span><span class="chev" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l5 5 5-5"/></svg></span></summary><div class="ans"><p>For most car accident injury claims, California sets a two-year limit for filing a lawsuit, counted from the crash. There are exceptions. If a city, county or state agency was at fault, a written government claim has to be filed much sooner, within months. Ask about deadlines promptly.</p></div></details>
+   <details name="faq"><summary><span class="n">04</span><span class="q">What if I was in an Uber or Lyft crash?</span><span class="chev" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l5 5 5-5"/></svg></span></summary><div class="ans"><p>Rideshare crashes can involve the driver’s personal policy and the coverage Uber or Lyft carries. Which one applies usually depends on whether the app was on and whether a ride was underway.</p></div></details>
+   <details name="faq"><summary><span class="n">05</span><span class="q">Can we do this in Spanish?</span><span class="chev" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l5 5 5-5"/></svg></span></summary><div class="ans"><p>Yes. Our intake staff speak Spanish; they are not attorneys. Ask for Spanish when you call, or tell us when we contact you. <span lang="es">Nuestro personal de admisión habla español.</span></p></div></details>
+  </div>
+ </div>
+</section>
 
-          <article class="result">
-            <p class="label">Labeled result · Motor vehicle</p>
-            <p class="amt">$3,000,000</p>
-            <p class="detail">Settled in 18 months.</p>
-            <p class="more"><span>Rideshare</span> $1,000,000 · policy limits tendered</p>
-            <p class="disc">Attorney advertising. Prior results do not guarantee a similar outcome.</p>
-          </article>
-        </div>
+<section class="close" aria-labelledby="h-close">
+ <div class="wrap close-grid">
+  <div class="close-lead">
+   <h2 id="h-close">Tell us what happened.</h2>
+   <p class="close-sub">There is no obligation, and contacting us does not create an attorney-client relationship.</p>
+  </div>
+  <div class="close-act">
+   <a class="ph" href="tel:+18662656699"><small>Call Colony Law</small>(866)&#8239;265-6699</a>
+   <p class="or2">or leave your number and we call you</p>
+   <form class="row" id="lead2" novalidate>
+    <div class="field" id="f2-name"><label for="name2">First name</label><input id="name2" type="text" placeholder="First name" autocomplete="given-name" required aria-required="true" aria-describedby="e2-name"><span class="err" id="e2-name" role="alert">Please enter your first name.</span></div>
+    <div class="field" id="f2-phone"><label for="phone2">Mobile phone</label><input id="phone2" type="tel" inputmode="tel" placeholder="Mobile phone" autocomplete="tel-national" required aria-required="true" aria-describedby="e2-phone"><span class="err" id="e2-phone" role="alert">Please enter a 10-digit number we can reach you on.</span></div>
+    <button class="btn" type="submit">Please call me</button>
+   </form>
+   <div class="done" id="done2" role="status" aria-live="polite" tabindex="-1"><h2>Thank you, <span id="dn2"></span>.</h2><p>Our team will call <b id="dp2"></b>. If that number is wrong, fix it so we can reach you.</p><button type="button" id="redo2">Change my number</button><p class="mk">Mockup only. Nothing was sent.</p></div>
+   <p class="close-fine">By submitting, you agree Colony Law may call you about your request. A member of our team will contact you. Submitting this form does not create an attorney-client relationship.</p>
+  </div>
+ </div>
+</section>
+</main>
 
-        <form class="panel" id="review" action="#" method="post">
-          <h2>Start your free review</h2>
-          <p class="sla">Live intake 24/7 · Attorney review within one business day</p>
-          <div class="field">
-            <label for="fn">First name</label>
-            <input id="fn" name="first_name" autocomplete="given-name" required />
-          </div>
-          <div class="field">
-            <label for="ph">Phone</label>
-            <input id="ph" name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
-          </div>
-          <div class="field">
-            <label for="ct">Case type</label>
-            <select id="ct" name="case_type" required>
-              <option value="car_accident" selected>Car accident</option>
-              <option value="rideshare">Rideshare</option>
-              <option value="truck">Truck</option>
-              <option value="pedestrian">Pedestrian</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="msg">What happened? <span class="hint">(optional)</span></label>
-            <textarea id="msg" name="what_happened" rows="2"></textarea>
-          </div>
-          <button class="submit" type="submit">Request free review</button>
-          <p class="form-note"><strong>No attorney fee unless we win.*</strong> Client may be responsible for costs.</p>
-        </form>
-      </div>
+<footer>
+ <div class="wrap foot">
+  <div class="foot-top">
+   <img src="assets/colony-logo-full-white.png" alt="Colony Law" width="1817" height="348">
+   <a class="foot-tel" href="tel:+18662656699">(866)&#8239;265-6699</a>
+  </div>
+  <div class="foot-cols">
+   <section aria-labelledby="f-office"><h2 id="f-office">Office</h2><p><b>Colony Law, P.C.</b><br>864 South Robertson Blvd, Third Floor<br>Los Angeles, CA 90035</p><p>Responsible attorney: Kevin K. Javidzad. Each lawyer practices only where licensed.</p></section>
+   <section aria-labelledby="f-fees"><h2 id="f-fees">Fees</h2><p id="fees"><b>No attorney fee unless we win</b> means you pay no attorney’s fee unless we win your case. Our fee is a percentage of your settlement or verdict. Separately, you’re responsible for case costs and expenses we advance on your behalf, such as medical record costs, even if your case doesn’t result in a recovery, as outlined in our fee agreement.</p></section>
+   <section aria-labelledby="f-legal"><h2 id="f-legal">Attorney advertising</h2><p>This page is for informational purposes only and is not legal advice. Contacting Colony Law, P.C. or submitting a form does not create an attorney-client relationship. Every case is different, and prior results do not guarantee or predict a similar outcome in any future case.</p></section>
+  </div>
+  <div class="foot-base"><span>© 2026 Colony Law, P.C.</span><span>Privacy policy (linked at launch)</span></div>
+ </div>
+</footer>
+<section class="rt" id="why" aria-labelledby="h-why">
+ <div class="wrap rt-wrap">
+  <p class="rt-flag">For review. This section explains the design and is not part of the page that visitors will see.</p>
+  <h2 class="rt-h" id="h-why">Why this page is built this way</h2>
+  <p class="rt-lead">Every major decision on this page traces back to evidence we gathered about Colony’s own visitors and about the Los Angeles market. Below we show what we looked at, what we decided, and how confident we are. We only list a decision as confident when we are at least 80% sure the evidence supports it.</p>
 
-      <ol class="steps">
-        <li><span>1</span> Call or send the form</li>
-        <li><span>2</span> We take the insurer</li>
-        <li><span>3</span> We prepare the file</li>
-      </ol>
-
-      <p class="es" id="es" lang="es">
-        ¿Prefiere español? Misma línea —
-        <a href="tel:+18662656699">llamar (866) COLONY-9</a>
-        — sin honorarios de abogado si no ganamos.*
-      </p>
-    </div>
-
-    <footer class="footer">
-      <div class="wrap">Colony Law · Los Angeles · Kevin K. Javidzad responsible for content. Attorney Advertising. Client may be responsible for costs.</div>
-    </footer>
+  <div class="rt-cols">
+   <div>
+    <h3>What we looked at</h3>
+    <ul>
+     <li>Colony’s own visitor data from July to November 2026: Google Analytics, Microsoft Clarity and CallRail.</li>
+     <li>The Google Ads account: keyword quality scores, landing page experience, ad copy and search terms.</li>
+     <li>Six Los Angeles personal injury firms’ pages, studied for layout, claims, speed, forms and calls to action.</li>
+     <li>An independent eleven-firm review of Los Angeles landing pages, which we compared with our own.</li>
+    </ul>
+   </div>
+   <div>
+    <h3>How to read “confidence”</h3>
+    <p>It is how sure we are that a decision is supported by the evidence we collected. It is not a forecast of leads or case results, and nothing here guarantees an outcome. Pages from competitors’ paid campaigns were not always visible to us, so some of what we studied was their public pages.</p>
+   </div>
   </div>
 
-  <nav class="sticky" aria-label="Mobile actions">
-    <a class="call-s" href="tel:+18662656699">Call</a>
-    <a class="rev-s" href="#review">Review</a>
-  </nav>
+  <h3 class="rt-sub">Decisions we are confident in</h3>
+  <div class="rt-table" role="region" aria-label="Decisions and the evidence behind them" tabindex="0">
+   <table>
+    <thead><tr><th scope="col">Decision</th><th scope="col">Why</th><th scope="col">Confidence</th></tr></thead>
+    <tbody>
+<tr><th scope="row">A headline in the searcher’s own words<span>Case type plus place: “Hurt in a car accident in Los Angeles?”</span></th><td>Our ads and keywords use these words, while the live page leads with a city hero. The independent review found the strongest paid pages open with case type and place, and in our own review only one of six firms did, so this is a gap Colony can own.</td><td class="cf"><b>85%</b></td></tr>
+<tr><th scope="row">The phone number is the primary action, and always in reach<span>Large call number, sticky call bar on phones</span></th><td>Same tracking code, very different behavior: the Dallas car page earns a phone tap in roughly 1 of 4 visits, the LA car page in fewer than 1 of 100 since late October. Every firm we reviewed leads with a call ask, and about 65% of paid visits are on phones.</td><td class="cf"><b>90%</b></td></tr>
+<tr><th scope="row">Fee and costs wording sits next to the ask<span>“No attorney fee unless we win” with the costs disclosure under the buttons</span></th><td>Five of the six firms we studied, and the strongest pages in the independent review, keep the fee line beside the ask. The wording is copied from Colony’s own vetted page and meets the California costs-disclosure requirement. Counsel should still confirm it.</td><td class="cf"><b>90%</b></td></tr>
+<tr><th scope="row">Proof limited to facts Colony can back up<span>4.9 on Google, 175+ reviews, Kevin’s real background. No results, percentages or hours.</span></th><td>The independent review flagged success-rate and result claims as the highest-risk pattern. Review count comes from Colony’s own live page (as of October 2026).</td><td class="cf"><b>90%</b></td></tr>
+<tr><th scope="row">A light, fast page<span>About 250 KB, mobile score 95, no layout shift</span></th><td>Most paid keywords are rated below average for landing page experience in the Google Ads account today. The firms we reviewed range from about 0.6 MB to 5 MB.</td><td class="cf"><b>90%</b></td></tr>
+<tr><th scope="row">The lawyer and the team are visible in the first screen<span>Whole-team image with Kevin named in the caption</span></th><td>None of the six firms we studied shows its team beside a named responsible lawyer in the first screen. The independent report found named people outperform anonymous scale.</td><td class="cf"><b>80%</b></td></tr>
+<tr><th scope="row">The page mirrors the ad message<span>“Talk to us before you talk to their insurer”</span></th><td>Matching the page to the ad that earned the click is a long-established principle in conversion research, and this is the angle the ads already use.</td><td class="cf"><b>85%</b></td></tr>
+<tr><th scope="row">Education stays below the ask, and the scroll is short<span>Two answers-first sections and a five-question FAQ</span></th><td>The independent review found that paid pages that turned into articles lost the click. Colony’s visitors read for minutes but rarely act, so the page asks early and explains after.</td><td class="cf"><b>80%</b></td></tr>
+<tr><th scope="row">Three short steps, not a long process<span>What happens next: You, Colony Law, You</span></th><td>The compact three-step pattern appears on the paid pages the independent review rated highest, and it answers the “what happens if I call?” hesitation.</td><td class="cf"><b>80%</b></td></tr>
+<tr><th scope="row">Sticky call and form bar on phones<span>Appears once the first form scrolls away</span></th><td>Used by the strongest paid page in the independent review. With roughly two thirds of paid visits on phones, an action within thumb reach matters.</td><td class="cf"><b>80%</b></td></tr>
+<tr><th scope="row">Accessible by construction<span>Contrast, keyboard use, focus states, reduced motion, light and dark themes</span></th><td>Measured, not estimated: Lighthouse accessibility score of 100 on phone and desktop.</td><td class="cf"><b>95%</b></td></tr>
+    </tbody>
+   </table>
+  </div>
 
-  <script>
-    (function () {
-      var form = document.getElementById("review");
-      if (!form) return;
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        form.innerHTML =
-          "<h2>Call so intake can start</h2>" +
-          "<p class=\"thanks\">The fastest path is " +
-          "<a href=\"tel:+18662656699\">(866) COLONY-9</a> — live 24/7.</p>";
-      });
-    })();
-  </script>
+  <h3 class="rt-sub">The design elements, explained</h3>
+  <dl class="rt-dl">
+   <div><dt>One typeface, set large and tight</dt><dd>A single grotesque family keeps the page calm and quick to read on a phone. Large, tightly spaced headlines let someone who is stressed understand the page in two seconds.</dd></div>
+   <div><dt>Ink, white and one gold marker</dt><dd>The page uses no decorative color. Gold appears only where something needs attention: the underline on the phone number, the final decision step and a few numerals. The only real color on the page is in the photograph of the team.</dd></div>
+   <div><dt>The ask comes first, then the proof</dt><dd>The call number and a two-field form are in the first screen, with the fee line and consent wording directly beneath. Reviews and Kevin’s background support the ask instead of delaying it.</dd></div>
+   <div><dt>The whole team, standing on the edge of the page</dt><dd>The people who will take the call are shown together and uncropped, with Kevin named. The edges of the cut-out are feathered into the backdrop so the image reads as one scene.</dd></div>
+   <div><dt>One axis for the journey</dt><dd>“What happens next” is symmetrical on purpose. Three equal steps show whose move it is (you, Colony Law, you), then three equal prompts show what to say on the call. Symmetry reads as order, which is what a worried visitor needs.</dd></div>
+   <div><dt>Forms that prevent mistakes</dt><dd>The phone number formats as it is typed, errors are plain and specific, and the confirmation repeats the number back with a way to fix it before anyone calls the wrong person.</dd></div>
+   <div><dt>Built for every visitor</dt><dd>Strong contrast, clear focus states, keyboard navigation, reduced motion for people who ask for it, light and dark themes, and a print version that keeps the phone number and fee terms.</dd></div>
+  </dl>
+  <p class="rt-note">Typeface, palette and layout rhythm are design judgment, not measurement. We are roughly 70% confident they help and have kept them out of the table above.</p>
+
+  <h3 class="rt-sub">What we are testing, not claiming</h3>
+  <ul class="rt-test">
+   <li><b>Two form fields instead of seven.</b> The live form has seven fields, and the firms we studied range from two to seven or more with no pattern. We expect fewer fields to help, and we will measure it.</li>
+   <li><b>Phone-first with a short callback form.</b> A second version built call-first or form-first will be tested against this one.</li>
+   <li><b>The whole team instead of one portrait.</b> We will compare how visitors respond to the team image against a single lawyer portrait.</li>
+  </ul>
+
+  <h3 class="rt-sub">What we left out on purpose</h3>
+  <p>Case results and dollar amounts, success-rate percentages, “24/7” and response-time promises, client quotes and staff names. These are the highest-risk claims under California advertising rules, and the evidence we have does not require them. If Kevin and counsel approve one verified result with its disclaimer beside it, there is a place for it next to the ask.</p>
+
+  <h3 class="rt-sub">What we need from Colony</h3>
+  <ul class="rt-test">
+   <li>A real group photograph and a current portrait of Kevin. The images here are placeholders.</li>
+   <li>Confirmation of the review count and rating, and the office hours shown on Google.</li>
+   <li>A decision on whether the logo’s “California | New York | Texas” line stays on a Los Angeles page.</li>
+   <li>Counsel’s approval of the fee wording and any Spanish wording for a Spanish-language version of this page.</li>
+  </ul>
+
+  <h3 class="rt-sub">How we will know it worked</h3>
+  <p>We will compare phone taps and form submissions per paid visit in Google Analytics, qualified calls of 60 seconds or longer in CallRail, and signed cases. At the current volume of paid clicks, a clear result takes several weeks, so we will read direction first in Clarity: scroll depth, quick exits and contact clicks.</p>
+ </div>
+</section>
+
+
+<nav class="bar" aria-label="Quick actions"><a class="c" href="tel:+18662656699" aria-label="Call Colony Law at (866) 265-6699">Call</a><a class="f" href="#review">Leave your number</a></nav>
+
+<script>
+(function(){
+ /* phone: format as the person types, validate 10 digits */
+ function fmt(v){var d=v.replace(/\D/g,'');if(d.length&&d[0]==='1')d=d.slice(1);d=d.slice(0,10);if(d.length<4)return d;if(d.length<7)return '('+d.slice(0,3)+') '+d.slice(3);return '('+d.slice(0,3)+') '+d.slice(3,6)+'-'+d.slice(6)}
+ function wire(o){
+  var f=document.getElementById(o.f),n=document.getElementById(o.n),p=document.getElementById(o.p),done=document.getElementById(o.d);
+  p.addEventListener('input',function(){var e=p.selectionStart===p.value.length;p.value=fmt(p.value);if(e)p.setSelectionRange(p.value.length,p.value.length)});
+  f.addEventListener('submit',function(e){e.preventDefault();
+   var okN=!!n.value.trim(),okP=p.value.replace(/\D/g,'').length===10;
+   document.getElementById(o.fn).classList.toggle('bad',!okN);document.getElementById(o.fp).classList.toggle('bad',!okP);
+   n.setAttribute('aria-invalid',okN?'false':'true');p.setAttribute('aria-invalid',okP?'false':'true');
+   if(!okN){n.focus();return}if(!okP){p.focus();return}
+   document.getElementById(o.dn).textContent=n.value.trim();document.getElementById(o.dp).textContent=p.value;
+   f.style.display='none';done.classList.add('show');done.focus();
+  });
+  document.getElementById(o.r).addEventListener('click',function(){done.classList.remove('show');f.style.display='';p.focus();p.select()});
+ }
+ wire({f:'lead',n:'name',p:'phone',d:'done',fn:'f-name',fp:'f-phone',dn:'dn',dp:'dp',r:'redo'});
+ wire({f:'lead2',n:'name2',p:'phone2',d:'done2',fn:'f2-name',fp:'f2-phone',dn:'dn2',dp:'dp2',r:'redo2'});
+ /* sticky bar appears only when the first ask has scrolled away */
+ var bar=document.querySelector('.bar'),t=document.getElementById('review');
+ if(bar&&t&&'IntersectionObserver' in window){new IntersectionObserver(function(e){bar.classList.toggle('on',!e[0].isIntersecting)},{threshold:.01}).observe(t)}else if(bar)bar.classList.add('on');
+
+ /* design notes (mock only): each decision, its evidence, and how strong that evidence is */
+ var NOTES=[
+  ['#n-h1','Headline matches the search','Data','Our keywords and ads say “car accident lawyer Los Angeles”. The live page leads with a city hero. Of six competitors studied, only Novik writes a headline in the searcher’s own words.'],
+  ['#n-call','Phone is the primary action','Data','Same tracking code, very different behavior: Dallas car page, a phone tap in roughly 1 of 4 visits. LA car page since late October, fewer than 1 in 100. Six of six competitors put a call ask in the first screen.'],
+  ['#lead','Two fields, one row','Test','The live form has seven fields; competitor forms range from 2 to 7 or more, so there is no market consensus. This is a hypothesis to test, not a proven fix. Phone auto-formats and the confirmation repeats the number back to catch typos.'],
+  ['#n-fee','Fee and costs beside the ask','Compliance','Wording is copied from Colony’s vetted live page (California B&P 6157.2 costs disclosure). Every competitor that converts keeps the fee line next to the form. Counsel to confirm.'],
+  ['#n-proof','Only proof we can back up','Compliance','4.9 on Google and 175+ reviews (the live page says 175+ as of October 2026; Kevin to confirm current). No results, percentages, hours or response-time promises.'],
+  ['#n-photo','The whole team, with the lawyer named','Competitor study','None of the six firms studied shows its team in the first screen with the responsible lawyer named. About 65% of paid sessions are on phones, so on a phone the image follows the ask instead of pushing it down. Placeholder quality: this is a cut-out composite (1024px); a real group photo from a shoot should replace it.'],
+  ['#h-ins','Mirrors the ad message','Reasoning','Same idea as the ad angle “talk to us before their insurer”, so the click lands on the promise it made. The three moments are set large so a skimmer gets the point in two seconds; Kevin’s background is the one specific fact competitors cannot copy.'],
+  ['#h-say','Lowers the barrier to calling','Hypothesis','Tells people what to say and that they need no documents. Our LA visitors stay about four to five minutes but rarely act; this targets the hesitation. Measure with phone taps per paid session.'],
+  ['#h-how','Three steps, not a manifesto','Competitor study','Morgan & Morgan keeps the process to three short steps. Education stays below the conversion job; article-style landers lose paid clicks in the study.'],
+  ['#h-faq','Answers reused from the live page','Compliance','All five answers are Colony’s approved text. Most paid keywords are rated below average on landing page experience today, so this page is also built light: about 250 KB against 0.6 to 5 MB for competitors.']
+ ];
+ var btn=document.getElementById('notesBtn'),pins=[],open=null;
+ function place(){pins.forEach(function(o){var r=o.el.getBoundingClientRect(),x=r.left+scrollX,y=r.top+scrollY;o.pin.style.left=Math.max(8,x-6)+'px';o.pin.style.top=Math.max(8,y-6)+'px';if(o.pop){var px=Math.min(Math.max(8,x-6),scrollX+innerWidth-o.pop.offsetWidth-12);o.pop.style.left=px+'px';o.pop.style.top=(y+30)+'px'}})}
+ function build(){NOTES.forEach(function(n,i){var el=document.querySelector(n[0]);if(!el)return;var pin=document.createElement('button');pin.type='button';pin.className='pin';pin.textContent=String(i+1);pin.setAttribute('aria-label','Design note '+(i+1)+': '+n[1]);var o={el:el,pin:pin,pop:null};
+  pin.addEventListener('click',function(e){e.stopPropagation();if(open&&open.pop){open.pop.remove();open.pop=null}if(open===o){open=null;return}var pop=document.createElement('div');pop.className='pop';pop.setAttribute('role','note');var em=document.createElement('em');em.textContent=n[2];var b=document.createElement('b');b.textContent=(i+1)+'. '+n[1];var p=document.createElement('p');p.textContent=n[3];pop.append(em,b,p);document.body.appendChild(pop);o.pop=pop;open=o;place()});
+  document.body.appendChild(pin);pins.push(o)});place()}
+ function clear(){pins.forEach(function(o){o.pin.remove();if(o.pop)o.pop.remove()});pins=[];open=null}
+ btn.addEventListener('click',function(){var on=btn.getAttribute('aria-pressed')!=='true';btn.setAttribute('aria-pressed',String(on));btn.textContent=on?'Hide design notes':'Show design notes';if(on)build();else clear()});
+ addEventListener('resize',function(){if(pins.length)place()});document.addEventListener('click',function(){if(open&&open.pop){open.pop.remove();open.pop=null;open=null}});
+})();
+</script>
 </body>
 </html>
